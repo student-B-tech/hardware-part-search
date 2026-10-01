@@ -11,16 +11,17 @@
     "prisma:studio": "prisma studio"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "bcryptjs": "latest",
+    "jose": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "bcryptjs": "latest",
-    "jose": "latest",
-    "@prisma/client": "^6.19.0"
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
-    "prisma": "^6.19.0",
     "@tailwindcss/postcss": "latest",
+    "prisma": "^6.19.0",
     "tailwindcss": "latest"
   }
 }

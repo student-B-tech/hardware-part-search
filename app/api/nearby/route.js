@@ -39,6 +39,11 @@ export async function GET(request) {
       where: {
         AND: [
           {
+            shop: {
+              status: "approved",
+            },
+          },
+          {
             OR: [
               {
                 name: {

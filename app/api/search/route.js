@@ -14,6 +14,10 @@ export async function GET(request) {
 
     const products = await db.product.findMany({
       where: {
+        shop: {
+          status: "approved",
+        },
+
         OR: [
           {
             name: {
