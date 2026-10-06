@@ -1102,6 +1102,152 @@ export default async function DashboardPage() {
             flex-direction: column;
           }
         }
+          /* =========================
+   MOBILE SHOPKEEPER FIX
+========================= */
+
+@media (max-width: 800px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .dashboard-shell {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    display: block !important;
+    overflow-x: hidden;
+  }
+
+  .dashboard-main {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 76px 14px 32px !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .dashboard-header {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .dashboard-header > div {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .dashboard-header h1,
+  .header-description {
+    overflow-wrap: anywhere;
+  }
+
+  .stats-grid {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .stat-card,
+  .stat,
+  .panel,
+  .manager-panel,
+  .manage-card,
+  .inventory-stats,
+  .manager-grid,
+  .quick-actions {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .inventory-stats {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px;
+  }
+
+  .manager-grid {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px;
+  }
+
+  .manage-card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .manage-form {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .manage-form input,
+  .manage-form select,
+  .manage-form textarea,
+  .manage-form button {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .quick-actions {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .action-card {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .dashboard-main {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .stats-grid,
+  .inventory-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .stat,
+  .mini-stat {
+    min-width: 0;
+    padding: 15px !important;
+  }
+
+  .stat b,
+  .mini-stat b {
+    font-size: 24px;
+  }
+
+  .stat span,
+  .mini-stat span {
+    font-size: 11px;
+  }
+
+  .manage-card {
+    padding: 14px !important;
+  }
+
+  .section-head {
+    flex-wrap: wrap;
+  }
+}
       `}</style>
     </main>
   );
